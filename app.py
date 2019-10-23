@@ -91,7 +91,7 @@ def stod(nafn,company):
         if i["nafn"] == nafn:
             dic = i
             break
-    return template("stod.html",nafn=dic["nafn"],lat=dic["geo"]["lat"],lon=dic["geo"]["lon"],comp = i["company"])
+    return template("stod.html",nafn=dic["nafn"],lat=dic["geo"]["lat"],lon=dic["geo"]["lon"],company = company, bensin=dic["bensin"],diesel=dic["diesel"])
 @app.errorhandler(404)
 def pagenotfound(error):
     return template("404.html"), 404

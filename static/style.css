@@ -36,6 +36,10 @@ header {
 }
 header a {
     text-decoration: none;
+
+}
+header a:hover {
+    color: mediumblue;
 }
 
 /* Footer */
@@ -115,4 +119,21 @@ table, th, td {
     margin-left: 4em;
     padding: 3px;
     font-size: 1.1em;
+}
+
+/* Stod.html */
+#stod-container {
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+}
+
+#stod-container img {
+    width: 230px;
+    height: 200px;
+    align-self: center;
+    margin: 10px;
+}
+#stod-container p {
+    margin: 13px;
 }
