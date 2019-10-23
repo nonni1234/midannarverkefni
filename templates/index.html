@@ -1,0 +1,53 @@
+{% extends "default.html" %}
+{% block title %}
+Index
+{% endblock %}
+
+{% block content %}
+<div class="container">
+{% for i in listi %}
+<div class="fyrirtaeki">
+    <a href="/company/{{i}}">
+    <h2>{{ i }}</h2>
+    </a>
+    <a href="/company/{{i}}"class="mynd">
+    <img src="/static/{{i}}.png">
+</a>    
+</div>
+</a>
+    {% endfor %}
+</div>
+<div id="table-container">
+    <div id="diesel-div">
+<table id="diesel-table">
+<thead>
+    <h2>Lægsta Dísel Verð</h2>
+</thead>
+<tr>
+    <td>Nafn</td>
+    <td>Verð</td>
+</tr>
+<tr>
+<td><a href="/company/{{ cheapest["diesel-nafn"] }}">{{ cheapest["diesel-nafn"] }}</a></td>
+<td>{{ cheapest["diesel"] }}</td>
+</tr>
+</table>
+</div>
+<div id="bensin-div">
+<table id="bensin-table">
+        <thead>
+            <h2>Lægsta Bensín Verð</h2>
+        </thead>
+        <tr>
+            <td>Nafn</td>
+            <td>Verð</td>
+        </tr>
+        <tr>
+        <td><a href="/company/{{ cheapest["bensin-nafn"] }}">{{ cheapest["bensin-nafn"] }}</a></td>
+        <td>{{ cheapest["bensin"] }}</td>
+        </tr>
+        </table>
+    </div>
+</div>
+<p class="dagsetning">Dagsetning síðustu uppfærslu: {{ 0 | getdate }}</p>
+{% endblock %}

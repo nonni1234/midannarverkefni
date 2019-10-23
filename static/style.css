@@ -1,0 +1,118 @@
+/* Body */
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+#content-container {
+    padding-bottom: 60px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#page-container {
+    position: relative;
+    min-height: 100vh;
+}
+a {
+    text-decoration: none;
+}
+
+/* Error 404 */
+.error {
+    color: brown;
+}
+
+/* Header */
+
+header {
+    display: flex;
+    background: red;
+    height: 5em;
+    border-bottom: 2px solid black;
+}
+.titill {
+    margin: auto;
+    align-self: center;
+    text-align: center;
+}
+header a {
+    text-decoration: none;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    font-size: 1.1em;
+    position: absolute;
+    border-top: 2px solid black;
+    bottom: 0;
+    height: 60px;
+    background: red;
+    width: 100%;
+}
+/* Index */
+.container {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+}
+.fyrirtaeki {
+    margin: 10px auto;
+    padding: 8px 30px;
+    display: flex;
+    flex-flow: row;
+    background: lavender;
+    width: 20em;
+}
+a {
+    align-self: center;
+    margin: auto;
+}
+a:hover {
+    color: red;
+}
+.fyrirtaeki img {
+    width: 130px;
+    height: 100px;
+}
+.dagsetning {
+    background: aliceblue;
+    width: max-content;
+    padding: 10px;
+    margin: auto;
+}
+hr {
+    width: 80%;
+    border-width: 1px;
+}
+/* Index Table */
+
+#table-container {
+    text-align: center;
+    display: flex;
+    flex-flow: row;
+    margin: auto;
+    width: max-content;
+}
+#bensin-table, #diesel-table {
+    margin: 15px;
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 10px;
+    font-size: 1.2em;
+}
+/* Stadir.html */
+#stadir-container {
+    width: max-content;
+    margin: auto;
+    text-align: left;
+}
+#stod {
+    color: maroon;
+    margin-left: 4em;
+    padding: 3px;
+    font-size: 1.1em;
+}

@@ -1,0 +1,16 @@
+{% extends "default.html" %}
+{% block title %} {{ nafn }} {% endblock %}
+{% block content %}
+<div id="stadir-container">
+<h2>Bensínstöðvar {{ nafn }} á Íslandi</h2>
+<div id="stadir">
+    <ul>
+    {% for x in stodvar %}
+    <li id="stod">
+        <a href="/{{x["company"]}}/{{ x["nafn"] }}">{{ x["nafn"] }} </a>
+    </li>
+    {% endfor %}
+    </ul>
+</div>
+</div>
+{% endblock %}

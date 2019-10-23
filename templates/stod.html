@@ -1,0 +1,10 @@
+{% extends "default.html" %}
+{% block title %} {{ nafn }} {% endblock %}
+{% block content %}
+<div id="stod-container">
+    <img src="/static/{{ company }}.png">
+    <p>Nafn: {{ nafn }}</p>
+    <a target="none" href="https://www.google.com/maps/search/?api=1&query={{lat}},{{lon}}">Staðsetning(Google Maps)</a>
+</div>
+
+{% endblock %}

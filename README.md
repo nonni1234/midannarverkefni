@@ -1,1 +1,2 @@
-# midannarverkefni
+# Miðannarverkefni
+## Jón Bjarki
